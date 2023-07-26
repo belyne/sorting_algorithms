@@ -22,7 +22,8 @@ void insertion_sort_list(listint_t **list)
 		insertion_point = current;
 		current = current->next;
 
-		while (insertion_point->prev != NULL && insertion_point->n < insertion_point->prev->n)
+		while (insertion_point->prev != NULL &&
+insertion_point->n < insertion_point->prev->n)
 		{
 			if (insertion_point->next != NULL)
 				insertion_point->next->prev = insertion_point->prev;
